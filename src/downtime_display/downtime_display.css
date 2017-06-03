@@ -1,0 +1,13 @@
+.tab-container{
+  /* Still have to do this height workaround */
+  height: calc(100vh - 300px) !important;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.left-column {
+  background-color: red;
+  height: 100%;
+  float:left;
+  width: 350px;
+}

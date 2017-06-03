@@ -1,21 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { connect } from 'react-redux'
+import DowntimeDisplay from './downtime_display/downtime_display.js';
 import './App.css';
 
-class App extends Component {
-  render() {
+const AppLayout = () => {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>Skill trees make my dick rock hard</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="App-sidebar">
+        </div>
+        <div className="App-mainbody">
+          <DowntimeDisplay />
+        </div>
       </div>
     );
+
+}
+const mapDispatchToProps = (dispatch) => {
+  return {
+  }
+}
+const mapStateToProps = (state) => {
+  return {
   }
 }
 
+const App = connect(mapStateToProps, mapDispatchToProps)(AppLayout)
 export default App;
