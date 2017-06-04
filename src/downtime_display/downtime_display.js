@@ -9,6 +9,40 @@ const DowntimeLayout = ({}) => (
       <div className="tab-container">
         <div className="left-column">
           Character name, info, unique tree goes here.
+          <div className="take-space">
+            <img className="skill-large-icon"
+              src={ require("../images/logo.svg")} draggable="false"
+            />
+            <div className="vertical-center">Text</div>
+            <img className="skill-large-icon"
+              src={ require("../images/logo.svg")} draggable="false"
+            />
+          </div>
+          <div className="take-space">
+            <img className="skill-large-icon"
+              src={ require("../images/logo.svg")} draggable="false"
+            />
+            <div className="vertical-center">Text</div>
+            <img className="skill-large-icon"
+              src={ require("../images/logo.svg")} draggable="false"
+            />
+          </div>
+          <div className="take-space">
+            <img className="skill-large-icon"
+              src={ require("../images/logo.svg")} draggable="false"
+            />
+            <div className="vertical-center">Text</div>
+            <img className="skill-large-icon"
+              src={ require("../images/logo.svg")} draggable="false"
+            />
+          </div>
+        </div>
+        <div className="left-column">
+          Badge listing and equips go here - equipped on top, unequipped
+          on bottom.
+        </div>
+        <div className="right-column">
+          Individual skill display info goes here.
         </div>
       </div>
     </Tab>
