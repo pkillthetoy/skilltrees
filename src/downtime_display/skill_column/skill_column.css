@@ -1,0 +1,15 @@
+
+img.skill-large-icon {
+  margin: 5px;
+  width: 64px;
+  height: 64px;
+}
+
+.take-space {
+  display: flex;
+  justify-content: space-between;
+}
+.vertical-center {
+  display:flex;
+  align-items:center;
+}

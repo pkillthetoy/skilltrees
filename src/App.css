@@ -23,7 +23,6 @@
 .App-mainbody {
   width: calc(100% - 350px);
   float: right;
-  background-color: green;
   padding: 5px;
   box-sizing: border-box;
 }

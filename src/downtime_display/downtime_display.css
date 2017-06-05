@@ -6,29 +6,19 @@
 }
 
 .left-column {
-  background-color: red;
   height: 100%;
   float:left;
+  text-align: center;
+  width: 350px;
+}
+.middle-column {
+  height: 100%;
+  float:left;
+  text-align: center;
   width: 350px;
 }
 .right-column {
-  background-color: blue;
   height: 100%;
   float:left;
   width: calc(100% - 700px);
-}
-
-img.skill-large-icon {
-  margin: 5px;
-  width: 64px;
-  height: 64px;
-}
-
-.take-space {
-  display: flex;
-  justify-content: space-between;
-}
-.vertical-center {
-  display:flex;
-  align-items:center;
 }

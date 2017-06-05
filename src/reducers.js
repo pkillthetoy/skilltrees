@@ -1,4 +1,5 @@
 const initialState = {
+  selectedSkill: null
 }
 
 // Top-level reducer.

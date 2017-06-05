@@ -1,48 +1,23 @@
 import React, { Component }from 'react';
 import { connect } from 'react-redux';
+import SkillColumn from './skill_column/skill_column.js';
 import {Tabs, Tab, Accordion, Panel, ProgressBar, OverlayTrigger, Tooltip} from 'react-bootstrap'
 import './downtime_display.css';
 
-const DowntimeLayout = ({}) => (
+const DowntimeLayout = ({selectedSkill}) => (
   <Tabs id="tabs">
-    <Tab eventKey={1} title="Battle">
+    <Tab eventKey={1} title="Roald">
       <div className="tab-container">
         <div className="left-column">
-          Character name, info, unique tree goes here.
-          <div className="take-space">
-            <img className="skill-large-icon"
-              src={ require("../images/logo.svg")} draggable="false"
-            />
-            <div className="vertical-center">Text</div>
-            <img className="skill-large-icon"
-              src={ require("../images/logo.svg")} draggable="false"
-            />
-          </div>
-          <div className="take-space">
-            <img className="skill-large-icon"
-              src={ require("../images/logo.svg")} draggable="false"
-            />
-            <div className="vertical-center">Text</div>
-            <img className="skill-large-icon"
-              src={ require("../images/logo.svg")} draggable="false"
-            />
-          </div>
-          <div className="take-space">
-            <img className="skill-large-icon"
-              src={ require("../images/logo.svg")} draggable="false"
-            />
-            <div className="vertical-center">Text</div>
-            <img className="skill-large-icon"
-              src={ require("../images/logo.svg")} draggable="false"
-            />
-          </div>
+          <SkillColumn charName="Roald" />
         </div>
-        <div className="left-column">
+        <div className="middle-column">
           Badge listing and equips go here - equipped on top, unequipped
           on bottom.
         </div>
         <div className="right-column">
           Individual skill display info goes here.
+          <div>{selectedSkill}</div>
         </div>
       </div>
     </Tab>
@@ -62,6 +37,7 @@ const downtimeDispatchToProps = (dispatch) => {
 }
 const downtimeStateToProps = (state) => {
   return {
+    selectedSkill: state.selectedSkill
   }
 }
 
