@@ -9,7 +9,7 @@ const DowntimeLayout = ({selectedSkill}) => (
     <Tab eventKey={1} title="Roald">
       <div className="tab-container">
         <div className="left-column">
-          <SkillColumn charName="Roald" />
+          <SkillColumn charName="roald" />
         </div>
         <div className="middle-column">
           Badge listing and equips go here - equipped on top, unequipped
